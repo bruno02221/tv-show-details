@@ -1,0 +1,19 @@
+@import "../_variables.css";
+
+.mainInfo h1 {
+  font-size: var(--title-size-1);
+}
+
+.mainInfo h4 {
+  font-size: var(--text-size-2);
+  font-weight: 400;
+  color: var(--color-black);
+  opacity: 0.5;
+  margin-left: 1.2vw;
+}
+
+.mainInfo .description {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6vw;
+}

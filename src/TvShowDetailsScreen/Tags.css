@@ -1,0 +1,22 @@
+@import "../_variables.css";
+
+.tags {
+  display: flex;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: var(--text-size-2);
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.75;
+}
+
+.tag::after {
+  content: "/";
+  margin: calc(var(--spacing-base));
+}
+
+.tag:last-child::after {
+  content: none;
+}

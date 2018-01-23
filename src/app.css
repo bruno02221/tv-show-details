@@ -2,7 +2,7 @@
 @import "./_variables.css";
 
 :root {
-  font-size: var(--font-base-size);
+  font-size: var(--text-size-1);
 }
 
 html,
@@ -22,4 +22,9 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
 }

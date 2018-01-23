@@ -1,0 +1,48 @@
+@import "../_variables.css";
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+.dataRoot {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  padding: calc(var(--spacing-base)*8);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.info {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainInfo {
+  flex-grow: 1;
+}
+
+.episodesBox {
+  position: relative;
+}
