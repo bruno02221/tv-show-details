@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./Main.css";
-import { getTvShowDetails, getTvShowEpisodes } from "../api";
 import TvShowDetailsScreen from "../TvShowDetailsScreen";
 
 class Main extends Component {
@@ -8,7 +7,7 @@ class Main extends Component {
     super(props);
     this.state = {
       shows: ["123"], // Fake show list,
-      selectedTvShow: null
+      selectedTvShowId: "123" // TODO: change it to null
     };
     this.onCloseTvShowDetails = this.onCloseTvShowDetails.bind(this);
   }
@@ -22,9 +21,9 @@ class Main extends Component {
           </button>
         ))}
 
-        {this.state.selectedTvShow ? (
+        {this.state.selectedTvShowId ? (
           <TvShowDetailsScreen
-            show={this.state.selectedTvShow}
+            tvShowId={this.state.selectedTvShowId}
             onRequestClose={this.onCloseTvShowDetails}
           />
         ) : null}
@@ -32,15 +31,15 @@ class Main extends Component {
     );
   }
 
-  openTvShow(showId) {
+  openTvShow(tvShowId) {
     this.setState({
-      selectedTvShow: showId
+      selectedTvShowId: tvShowId
     });
   }
 
   onCloseTvShowDetails() {
     this.setState({
-      selectedTvShow: null
+      selectedTvShowId: null
     })
   }
 }

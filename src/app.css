@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700');
+@import "./_variables.css";
+
+:root {
+  font-size: var(--font-base-size);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 *, *::before, *::after {
