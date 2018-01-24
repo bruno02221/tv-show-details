@@ -1,6 +1,14 @@
+@import "../_variables.css";
+
 .root {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button {
+  padding: var(--spacing-base);
+  background: var(--color-primary);
+  color: var(--color-white);
 }

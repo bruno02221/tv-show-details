@@ -16,7 +16,11 @@ class Main extends Component {
     return (
       <div className={styles.root}>
         {this.state.shows.map(show => (
-          <button key={show} onClick={() => this.openTvShow(show)}>
+          <button
+            className={styles.button}
+            key={show}
+            onClick={() => this.openTvShow(show)}
+          >
             {`Open TV show ${show} details`}
           </button>
         ))}
@@ -40,7 +44,7 @@ class Main extends Component {
   onCloseTvShowDetails() {
     this.setState({
       selectedTvShowId: null
-    })
+    });
   }
 }
 
