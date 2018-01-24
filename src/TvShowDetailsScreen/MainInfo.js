@@ -9,7 +9,7 @@ const MainInfo = ({ title, genres, year, className, ...rest }) => {
       <h1>{title}</h1>
       <div className={classnames(styles.description)}>
         <Tags className={classnames(styles.tags)}>
-          {genres.map(genre => <Tag key={genre.ID}>{genre.Title}</Tag>)}
+          {genres.map(genre => <Tag key={genre.id}>{genre.title}</Tag>)}
         </Tags>
         <h4>{year}</h4>
       </div>

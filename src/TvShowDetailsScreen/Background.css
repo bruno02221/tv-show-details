@@ -1,7 +1,7 @@
 @import "../_variables.css";
 
 .background {
-  filter: blur(56px);
+  filter: blur(24px);
   background-size: cover;
   background-position: center top;
 }

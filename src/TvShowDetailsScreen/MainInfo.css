@@ -9,11 +9,11 @@
   font-weight: 400;
   color: var(--color-black);
   opacity: 0.5;
-  margin-left: 1.2vw;
+  margin-left: calc(var(--spacing-base) * 2);
 }
 
 .mainInfo .description {
   display: flex;
   align-items: center;
-  margin-top: 0.6vw;
+  margin-top: calc(var(--spacing-base) / 2);
 }

@@ -34,8 +34,8 @@ class TvShowDetailsScreen extends Component {
       data: null
     });
     Promise.all([
-      getTvShowDetails(tvShowId).then(resp => resp.json()),
-      getTvShowEpisodes(tvShowId).then(resp => resp.json())
+      getTvShowDetails(tvShowId),
+      getTvShowEpisodes(tvShowId)
     ]).then(this._onLoadData);
   }
 
@@ -44,7 +44,7 @@ class TvShowDetailsScreen extends Component {
       loading: false,
       data: {
         tvShowDetails: data[0],
-        episodesDetails: data[1]
+        episodes: data[1]
       }
     });
   }
@@ -67,25 +67,25 @@ class TvShowDetailsScreen extends Component {
       <div className={styles.dataRoot}>
         <Background
           className={styles.background}
-          imageSrc={this.state.data.tvShowDetails.Images.Background}
+          imageSrc={this.state.data.tvShowDetails.images.background}
         />
         <CloseButton className={styles.closeButton} />
         <div className={styles.info}>
           <MainInfo
             className={styles.mainInfo}
-            title={this.state.data.tvShowDetails.Title}
-            year={this.state.data.tvShowDetails.Year}
-            genres={this.state.data.tvShowDetails.Genres}
+            title={this.state.data.tvShowDetails.title}
+            year={this.state.data.tvShowDetails.year}
+            genres={this.state.data.tvShowDetails.genres}
           />
           <InfoBox
             className={styles.infoBox}
-            cast={this.state.data.tvShowDetails.Cast}
-            synopsis={this.state.data.tvShowDetails.Synopsis}
+            cast={this.state.data.tvShowDetails.cast}
+            synopsis={this.state.data.tvShowDetails.synopsis}
           />
         </div>
         <EpisodesBox
           className={styles.episodesBox}
-          episodes={this.state.data.episodesDetails}
+          episodes={this.state.data.episodes}
         />
       </div>
     );

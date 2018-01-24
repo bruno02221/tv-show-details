@@ -15,7 +15,7 @@
   position: relative;
   flex-grow: 1;
   display: flex;
-  padding: calc(var(--spacing-base)*8);
+  padding: calc(var(--spacing-base)*2.5) calc(var(--spacing-base)*4);
 }
 
 .background {
@@ -45,4 +45,5 @@
 
 .episodesBox {
   position: relative;
+  width: 32vw;
 }
