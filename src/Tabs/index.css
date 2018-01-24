@@ -23,3 +23,12 @@
   color: var(--color-primary);
   border-bottom: var(--border-height) solid var(--color-primary);
 }
+
+.tabPanel {
+  opacity: 0;
+  transition: opacity var(--transition-duration);
+}
+
+.tabPanelSelected {
+  opacity: 1;
+}

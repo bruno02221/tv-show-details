@@ -20,7 +20,15 @@ const CustomTabs = ({ titles, contents, className, ...rest }) => {
         })}
       </TabList>
       {contents.map((content, index) => {
-        return <TabPanel key={index}>{content}</TabPanel>;
+        return (
+          <TabPanel
+            className={styles.tabPanel}
+            selectedClassName={styles.tabPanelSelected}
+            key={index}
+          >
+            {content}
+          </TabPanel>
+        );
       })}
     </Tabs>
   );

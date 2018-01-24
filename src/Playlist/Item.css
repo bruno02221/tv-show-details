@@ -1,0 +1,62 @@
+@import "../_variables.css";
+
+.item {
+  padding: calc(var(--spacing-base)/2);
+  border-bottom: 0.1vw solid color(var(--color-black) alpha(5%));
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.titleText {
+  position: relative;
+  overflow: hidden;
+}
+
+.number {
+  margin-right: calc(var(--spacing-base)/2);
+}
+
+.play {
+  width: 2vw;
+  height: 2vw;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.playImage {
+  fill: var(--color-primary);
+  height: 100%;
+  width: 100%;
+}
+
+.more {
+  opacity: 0;
+  transition: opacity var(--transition-duration);
+  margin-top: var(--spacing-base);
+}
+
+.more img {
+  width: 100%;
+}
+
+.more p {
+  font-size: calc(var(--text-size-1)*0.75);
+}
+
+.moreActive {
+  opacity: 1;
+}
