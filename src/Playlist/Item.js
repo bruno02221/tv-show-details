@@ -49,7 +49,7 @@ class MoreContent extends Component {
     return (
       <div className={classnames(styles.more, modifiersClasses)}>
         <img src={this.props.episode.image} />
-        <p>{this.props.episode.synopsis}</p>
+        <p>{this.props.episode.synopsis} <strong>{this.props.episode.duration} min</strong></p>
       </div>
     );
   }
