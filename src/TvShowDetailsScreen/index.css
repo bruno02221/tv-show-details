@@ -28,8 +28,8 @@
 
 .closeButton {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: var(--spacing-base);
+  right: var(--spacing-base);
 }
 
 .info {

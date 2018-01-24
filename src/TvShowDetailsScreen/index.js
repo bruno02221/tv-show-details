@@ -33,10 +33,9 @@ class TvShowDetailsScreen extends Component {
       loading: true,
       data: null
     });
-    Promise.all([
-      getTvShowDetails(tvShowId),
-      getTvShowEpisodes(tvShowId)
-    ]).then(this._onLoadData);
+    Promise.all([getTvShowDetails(tvShowId), getTvShowEpisodes(tvShowId)]).then(
+      this._onLoadData
+    );
   }
 
   _onLoadData(data) {
@@ -69,7 +68,10 @@ class TvShowDetailsScreen extends Component {
           className={styles.background}
           imageSrc={this.state.data.tvShowDetails.images.background}
         />
-        <CloseButton className={styles.closeButton} />
+        <CloseButton
+          className={styles.closeButton}
+          onClick={this.requestClose}
+        />
         <div className={styles.info}>
           <MainInfo
             className={styles.mainInfo}

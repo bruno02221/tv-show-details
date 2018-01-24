@@ -1,0 +1,16 @@
+@import "../_variables.css";
+
+.button {
+  width: 3vw;
+  height: 3vw;
+}
+
+.button:active {
+  transform: scale(1.1);
+}
+
+.closeImg {
+  height: 100%;
+  width: 100%;
+  fill: color(var(--color-black) alpha(25%));
+}

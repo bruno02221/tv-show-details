@@ -1,10 +1,13 @@
 import React from "react";
+import classnames from "classnames";
+import styles from "./CloseButton.css";
+import CloseSvg from "./close.svg";
 
 const CloseButton = ({ className, ...rest }) => {
   return (
-    <div {...rest} className={className}>
-      Close
-    </div>
+    <button {...rest} className={classnames(styles.button, className)}>
+      <CloseSvg className={styles.closeImg} />
+    </button>
   );
 }
 
