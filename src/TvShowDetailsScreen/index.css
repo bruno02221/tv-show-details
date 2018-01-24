@@ -11,6 +11,15 @@
   background: var(--color-white);
 }
 
+.loadingRoot {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-size-2);
+}
+
 .dataRoot {
   position: relative;
   flex-grow: 1;

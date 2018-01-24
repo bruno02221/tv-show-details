@@ -94,7 +94,7 @@ class TvShowDetailsScreen extends Component {
   }
 
   _renderLoading() {
-    return <div>Waiting</div>;
+    return <div className={styles.loadingRoot}>Loading</div>;
   }
 
   requestClose() {
