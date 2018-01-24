@@ -1,0 +1,15 @@
+@import "../_variables.css";
+
+.cast {
+  display: flex;
+}
+
+.castPerson {
+  background: color(var(--color-black) alpha(5%));
+  margin-right: var(--spacing-base);
+  padding: calc(var(--spacing-base) / 2);
+}
+
+.castPerson:last-child::after {
+  content: "";
+}
