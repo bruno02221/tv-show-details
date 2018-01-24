@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,700);.src-Main-__root {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.src-Main-__button {
+  padding: 1.4vw;
+  background: #33b144;
+  color: #ffffff;
+}.src-TvShowDetailsScreen-__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff;
+}
+
+.src-TvShowDetailsScreen-__loadingRoot {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.6vw;
+}
+
+.src-TvShowDetailsScreen-__dataRoot {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.5vw 5.6vw;
+}
+
+.src-TvShowDetailsScreen-__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.src-TvShowDetailsScreen-__closeButton {
+  position: absolute;
+  top: 1.4vw;
+  right: 1.4vw;
+}
+
+.src-TvShowDetailsScreen-__info {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 11.2vw;
+}
+
+.src-TvShowDetailsScreen-__mainInfo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.src-TvShowDetailsScreen-__episodesBox {
+  position: relative;
+  width: 28vw;
+}.src-TvShowDetailsScreen-__background {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="24" /></filter></svg>#filter');
+  -webkit-filter: blur(24px);
+          filter: blur(24px);
+  background-size: cover;
+  background-position: center top;
+}
+
+.src-TvShowDetailsScreen-__fog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  opacity: 0.75;
+}
+.src-TvShowDetailsScreen-__button {
+  width: 3vw;
+  height: 3vw;
+}
+
+.src-TvShowDetailsScreen-__button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.src-TvShowDetailsScreen-__closeImg {
+  height: 100%;
+  width: 100%;
+  fill: rgba(0, 0, 0, 0.25);
+}.src-TvShowDetailsScreen-__mainInfo h1 {
+  font-size: 5.6vw;
+}
+
+.src-TvShowDetailsScreen-__mainInfo h4 {
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.86275);
+  opacity: 0.5;
+  margin-left: 2.8vw;
+}
+
+.src-TvShowDetailsScreen-__mainInfo .src-TvShowDetailsScreen-__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.7vw;
+}.src-TvShowDetailsScreen-__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.src-TvShowDetailsScreen-__tag {
+  text-transform: uppercase;
+  font-size: 1.6vw;
+  font-weight: 700;
+  color: #33b144;
+  opacity: 0.75;
+}
+
+.src-TvShowDetailsScreen-__tag::after {
+  content: "/";
+  margin: 1.4vw;
+}
+
+.src-TvShowDetailsScreen-__tag:last-child::after {
+  content: none;
+}.src-Tabs-__tabList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.15vw solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.src-Tabs-__tab {
+  position: relative;
+  font-weight: 600;
+  list-style: none;
+  padding: 1.4vw 2.8vw;
+  cursor: pointer;
+  top: 0.15vw;
+}
+
+.src-Tabs-__tabSelected {
+  color: #33b144;
+  border-bottom: 0.15vw solid #33b144;
+}
+
+.src-Tabs-__tabPanel {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.src-Tabs-__tabPanelSelected {
+  opacity: 1;
+}.src-Playlist-__list ul {
+  list-style: none;
+  padding: 0;
+}.src-Playlist-__item {
+  padding: 0.7vw;
+  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.05);
+}
+
+.src-Playlist-__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.src-Playlist-__item:last-child {
+  border-bottom: none;
+}
+
+.src-Playlist-__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+}
+
+.src-Playlist-__titleText {
+  position: relative;
+  overflow: hidden;
+}
+
+.src-Playlist-__number {
+  margin-right: 0.7vw;
+}
+
+.src-Playlist-__play {
+  width: 2vw;
+  height: 2vw;
+}
+
+.src-Playlist-__playImage {
+  fill: #33b144;
+  height: 100%;
+  width: 100%;
+}
+
+.src-Playlist-__more {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  margin-top: 1.4vw;
+}
+
+.src-Playlist-__more img {
+  width: 100%;
+}
+
+.src-Playlist-__more p {
+  font-size: 1.05vw;
+}
+
+.src-Playlist-__moreActive {
+  opacity: 1;
+}.src-TvShowDetailsScreen-__cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.src-TvShowDetailsScreen-__castPerson {
+  background: rgba(0, 0, 0, 0.05);
+  margin-right: 1.4vw;
+  padding: 0.7vw;
+}
+
+.src-TvShowDetailsScreen-__castPerson:last-child::after {
+  content: "";
+}:root {
+  font-size: 1.4vw;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgba(0, 0, 0, 0.86275);
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+#app {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
