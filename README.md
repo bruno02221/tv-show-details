@@ -46,3 +46,7 @@ The production files are created in the `dist` folder.
 ## Deploying
 
 We also have a deploy script. It's helpful for deploying the project's `dist` folder to the `gh-pages` branch of its github repository.
+
+```shell
+yarn deploy
+```
